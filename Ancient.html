@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Museum of Ancient India</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #070447;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            padding-top: 30px;
+            font-size: 2em;
+            color: cyan;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .card {
+            background: #f701ff;
+            color: white;
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(211, 0, 244, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            margin-top: 10px;
+        }
+
+        .card p {
+            font-size: 0.95em;
+            margin: 10px 0;
+        }
+
+        .card button {
+            background: #f3f0f3;
+            color: rgb(3, 2, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #addeec;
+        }
+
+        .card2 {
+            background: #0000ff;
+            color: rgb(5, 234, 246);
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card2:hover {
+            transform: scale(1.05);
+        }
+
+        .card2 img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card2 h2 {
+            margin-top: 10px;
+        }
+
+        .card2 p {
+            font-size: 0.95em;
+            margin: 10px 0;
+        }
+
+        .card2 button {
+            background: #07a8ff;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card2 button:hover {
+            background: #8802fd;
+        }
+
+        .card3 {
+            background: rgb(5, 234, 246);
+            color: rgb#0000ff;
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card3:hover {
+            transform: scale(1.05);
+        }
+
+        .card3 img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card3 h2 {
+            margin-top: 10px;
+        }
+
+        .card3 p {
+            font-size: 0.95em;
+            margin: 10px 0;
+        }
+
+        .card3 button {
+            background: #07a8ff;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card3 button:hover {
+            background: #8802fd;
+        }
+        footer{
+            width: 100%;
+            margin: 100%, auto;
+            color: white;
+           
+        }
+
+
+        *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+    header{
+            
+            border-style:solid;
+            border-width:3px;
+            border-color:rgb(214, 110, 131);
+
+            justify-content: flex-end;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+            background-color:white;
+        }
+        a{
+            font-size: 22px;
+            text-decoration: none;
+        }
+    .header_second{
+            width:60%;
+            justify-content: space-between;
+            align-items: center;
+            display:flex;   
+    }
+    nav a{
+        text-decoration: none;
+        color: #1c032e;
+        padding: 10px 15px;
+        font-weight: bold;
+        transition: color 0.3s, border-bottom 0.3s;
+
+    }
+     nav a:hover{
+        
+       color: rgb(240, 8, 248);
+       border-bottom: 2px solid #addeec;
+    }
+    
+
+    </style>
+    <header >
+    <div style="width: 30%;">
+            <img src="flag.png" style="width:70px; margin-right:200px;">
+    </div>
+    <div id="header_second" style="display: flex; justify-content:center;">
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="Ancient.html" >Ancients</a>
+        <a href="festival.html" >Festivals</a>
+        </nav>
+    </div>
+    </header>
+</head>
+
+<body>
+    <a href="#">
+        <h1>Ancients Of India</h1>
+    </a>
+
+    <div class="cards">
+        <div class="card">
+            <h2>Ajanta Caves</h2>
+            <img src="Ajanta.jpg" alt="Ajanta Caves">
+            <p>Rock-cut Buddhist cave monuments dating back to the 2nd century BCE in Maharashtra, India.</p>
+            <button>Ajanta</button>
+        </div>
+
+        <div class="card">
+            <h2>Ellora Caves</h2>
+            <img src="Ellora.png" alt="Ellora Caves">
+            <p>Monolithic rock-cut temples representing Buddhism, Hinduism, and Jainism.</p>
+            <button>Ellora</button>
+        </div>
+
+        <div class="card">
+            <h2>Nalanda University</h2>
+            <img src="NalandaUniversity.jpg" alt="Nalanda">
+            <p>One of the world's first residential universities and a center of learning in ancient India.</p>
+            <button>Nalanda</button>
+        </div>
+        <div class="card">
+            <h2>Golden Temple</h2>
+            <img src="golden.jpg" alt="Golden">
+            <p>The Golden Temple in Amritsar is the holiest shrine of sikhism, Known for its spritual significance and
+                golden architecture</p>
+            <button>Golden</button>
+        </div>
+        <div class="card2">
+            <h2>Raigad Fort</h2>
+            <img src="raigad1.jpg" alt="Raigad">
+            <p>It stands 2700 feet above sea level and was the site of his coronation in 1674. The fort includes royal
+                palaces, the king’s court (Raj Sabha), Jagadishwar Temple, and Shivaji Maharaj’s Samadhi. It symbolizes
+                Maratha pride, courage, and architectural excellence.</p>
+            <button>raigad-fort</button>
+        </div>
+        <div class="card2">
+            <h2>Shivrai Mudra</h2>
+            <img src="shivrai.jpg" alt="Shivrai Mudra">
+            <p>During the time of Chhatrapati Shivaji Maharaj (17th century), the coinage was influenced by the Mughal
+                and Adilshahi empires. When Shivaji Maharaj established his own independent Swarajya, he introduced his
+                own coins.</p>
+            <button>Shivrai Mudra</button>
+        </div>
+        <div class="card2">
+            <h2>Grishneshwar Temple</h2>
+            <img src="grishneshwartemple.jpg" alt="Grishneshwar">
+            <p>Located in Verul village near Ellora Caves, Maharashtra, Grishneshwar is the 12th Jyotirlinga of Lord
+                Shiva. Originally built by Maloji Bhosale and later restored by Ahilyabai Holkar, the temple is a fine
+                example of Hemadpanthi architecture.</p>
+            <button>Grishneshwar</button>
+        </div>
+        <div class="card2">
+            <h2>Maurya Empires</h2>
+            <img src="MauryanEmpire.webp" alt="Maurya Empires">
+            <p>Founded by Chandragupta Maurya, it was one of the largest empires in Indian history. Emperor Ashoka
+                spread Buddhism after the Kalinga war and promoted peace and Dharma through his edicts.</p>
+            <button>Maurya Empires</button>
+        </div>
+        <div class="card3">
+            <h2> Gupta Empire</h2>
+            <img src="GuptaEmpire.webp" alt=" Gupta Empire">
+            <p>The Gupta Empire (c. 320–550 CE) is considered the Golden Age of India due to its remarkable achievements
+                in science, mathematics, astronomy, religion, and literature. Scholars like Aryabhata made advances in
+                algebra and planetary models, while Kalidasa enriched Sanskrit literature.</p>
+            <button>Gupta Empires</button>
+        </div>
+        <div class="card3">
+            <h2>Satavahana, Chola, Pallava, Kushan</h2>
+            <img src="satavahanadynasty.jpg" alt="Satavahana, Chola, Pallava, Kushan">
+            <p>These dynasties contributed greatly to Indian architecture, maritime trade, and temple construction.
+                Cholas were famous for Brihadeeswarar Temple, and Kushans for promoting Gandhara art.</p>
+            <button>Satavahana</button>
+        </div>
+        <div class="card3">
+            <h2>Takshashila University</h2>
+            <img src="TakshashilaUniversity.png" alt="Takshashila University">
+            <p>Takshashila was an ancient seat of learning that attracted scholars from across Asia. It wasn’t a
+                university in the modern sense but a hub of knowledge with multiple teachers and disciplines.</p>
+            <button>Takshashila University</button>
+        </div>
+        <div class="card3">
+            <h2>Ancient Scripts & Languages</h2>
+            <img src="R.jpeg" alt="Ancient Scripts & Languages">
+            <p>Ancient India had a rich tradition of written and spoken languages. Scripts and languages developed for
+                religion, trade, governance, and literature.</p>
+            <button>Ancient Scripts</button>
+        </div>
+        
+        <footer style="background-color: #070447; color: #ccc; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; font-size: 14px;">
+  <hr style="border-color: #fef9f9;">
+  
+  <p style="margin: 8px 0;">&copy; Powered by Team 70 | Valmik Ancient India Project | Hackathon 2025 ✨</p>
+  
+  <p style="margin: 8px 0;">
+    Email: <a href="mailto:valmikkolte7@gmail.com">valmikkolte7@gmail.com</a>
+  </p>
+  
+  <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px;">
+    <img src="insta.png" alt="Instagram" style="width: 30px; height: 30px;">
+    <a href="https://www.instagram.com/its__valmik" target="_blank" style="color: #f09433; font-weight: bold; text-decoration: none;">@its_valmik</a>
+  </div>
+</footer>
+</body>
+
+</html>
